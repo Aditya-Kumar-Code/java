@@ -1,0 +1,245 @@
+class Simple{  
+    public static void main(String args[]){  
+     System.out.println("Hello Java");  
+    }  
+}  
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        int c = scan.nextInt();
+        // Complete this line
+        // Complete this line
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        // Complete this line
+        // Complete this line
+    }
+}
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int N = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+        if(N%2==0 && 20<N){
+            System.out.print("Not Weird");
+        }
+        else if (N%2==0 && 2<=N && 5>=N){
+            System.out.print("Not Weird");
+            
+        }
+        else if (N%2==0 && 6<=N && 20>=N){
+            System.out.print("Weird");
+        }
+        else if (N%2!=0){
+            System.out.print("Weird");
+        }
+
+        scanner.close();
+    }
+}
+import java.util.Scanner;
+import java.util.*;  
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
+        double d = scan.nextDouble();
+        String s= scan.nextLine();            // Write your cod.nee here.
+
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
+    }
+}
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        Scanner scan = new Scanner(System.in);
+        int p = scan.nextInt();
+        for(int i=1;i<11;i++){
+            System.out.print(p+" x "+i+" = "+i*p);
+            System.out.print(System.lineSeparator());
+
+        }
+    
+    }
+}
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        String B=sc.next();
+        int a1=A.length();
+        int b1=B.length();
+        int c1=a1+b1;
+        System.out.print(c1);
+        System.out.print(System.lineSeparator());
+        if(A.compareTo(B)>0){
+        System.out.print("Yes");
+        System.out.print(System.lineSeparator());
+        }
+        else{
+            System.out.print("No");
+            System.out.print(System.lineSeparator());
+        }
+        String s1 = A.substring(0, 1).toUpperCase();
+        String nameCapitalized = s1 + A.substring(1);
+        String s2 = B.substring(0, 1).toUpperCase();
+        String p = s2 + B.substring(1);
+
+        System.out.print(nameCapitalized+" "+p);
+        /* Enter your code here. Print output to STDOUT. */
+        
+    }
+}
+
+
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String S = in.next();
+        int start = in.nextInt();
+        int end = in.nextInt();
+        String a2 = S.substring(start, end);
+        System.out.print(a2);
+    }
+}
+
+
+
+import java.util.Scanner;
+import java.util.*;  
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        String s= scan.nextLine();  
+        String a = scan.nextLine();          // Write your cod.nee here.
+        String m = scan.nextLine();
+        double str1 = Double.parseDouble(a); 
+        System.out.println("String: " + m);
+        System.out.print("Double: " + str1);
+        System.out.print(System.lineSeparator());
+
+        System.out.print("Int: " + s);
+        
+    }
+}
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+	   
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int[] a = new int[n];
+        for (int p = 0; p < a.length; p++) {
+            a[p]=scan.nextInt();
+        }
+        scan.close();
+
+        // Prints each sequential element in array a
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i]);
+        }
+    }
+}
+
+
+
+// Java implementation of the approach
+
+
+import java.util.Scanner;
+import java.util.*;  
+public class GFG {
+ 
+    // Function that returns true if
+    // str is a palindrome
+    static boolean isPalindrome(String str)
+    {
+ 
+        // Pointers pointing to the beginning
+        // and the end of the string
+        int i = 0, j = str.length() - 1;
+ 
+        // While there are characters to compare
+        while (i < j) {
+ 
+            // If there is a mismatch
+            if (str.charAt(i) != str.charAt(j))
+                return false;
+ 
+            // Increment first pointer and
+            // decrement the other
+            i++;
+            j--;
+        }
+ 
+        // Given string is a palindrome
+        return true;
+    }
+ 
+    // Driver code
+    public static void main(String[] args)
+    {
+        Scanner scan = new Scanner(System.in);
+        
+        String str= scan.nextLine();
+        
+        
+        if (isPalindrome(str))
+            System.out.print("Yes");
+        else
+            System.out.print("No");
+    }
+}
